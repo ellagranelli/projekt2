@@ -1,11 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 100%;
+}
 
 .logofat {
     font-family: futura;
     font-weight: bold;
     color: white;
-    margin: 0;
     display: inline;
     margin-left: 20px;
+    margin-top: 4px;
     font-size: 40px;
 }
 
@@ -13,10 +21,11 @@
     font-family: futura;
     color: white;
     margin: 0;
+    margin-top: 4px;
     display: inline;
     font-size: 40px;
 }
-
+ 
 .notifications {
     width: 40px;
     height: 40px;
@@ -49,11 +58,6 @@
     margin-top: 3px;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 #container .header {
     background-color: #68B5B9;
     text-align: left;
@@ -78,7 +82,7 @@
     display: flex;
     margin-top: 10px;
     margin-left: 40px;
-    box-shadow: 9px 12px 0px 3px rgba(207,207,207,1);
+    box-shadow: 9px 12px 0px 3px rgba(0, 0, 0, 0.2)  ;
 }
 
 a {
@@ -142,7 +146,7 @@ a {
     right: 10px;
     height: 200px;
     top: -90vh;
-    box-shadow: 9px 12px 0px 3px rgba(207,207,207,1);
+    box-shadow: 9px 12px 0px 3px rgba(0, 0, 0, 0.2);
     background-color: #68B5B9;
     align-items: center;
     width: 200px;
@@ -175,4 +179,155 @@ a {
     width: 28px;
     margin-left: 20px;
     margin-top: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        z-index: 1;
+        display: flex;
+    }
+    
+    #container {
+        width: 100%;
+    }
+    
+    .logofat {
+        margin-left: 7px;
+        margin-top: 9px;
+        font-size: 25px;
+    }
+    
+    .logothin {
+        margin-top: 9px;
+        font-size: 25px;
+    }
+     
+    .notifications {
+        width: 30px;
+        height: 30px;
+        right:60px;
+    }
+    
+    .bell {
+        width: 21px;
+    }
+    
+    .new {
+        width: 30px;
+        height: 30px;
+        right:100px;
+    }
+    
+    .plus {
+        width: 24px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .titel {
+        font-family: futura;
+        color: white;
+        margin: 20px;
+        font-size: 25px;
+    }
+    
+    .burger {
+        margin-right: 12px;
+        margin-top: 7px;
+        right:0px;
+    }
+    
+    .burger div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 7px;
+        border-radius: 10%;
+        transition: all 0.3s;
+    }
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 9px);
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -9px);
+    }
+    
+    .navActive {
+        transform: translateY(99vh);
+    }
+    
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 10px;
+        height: 200px;
+        top: -90vh;
+        background-color: #68B5B9;
+        align-items: center;
+        width: 30vh;
+        transition: all 0.7s;
+        z-index: 1;
+    }
+    
+    .navLinks li {
+        list-style: none;
+    }
+    
+    .navLinks a {
+        color: white;
+        text-decoration: none;
+        font-family: futura;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .text {
+        font-family: futura;
+        font-size: 30px;
+        color: Black;
+        margin-top: 20px;
+        margin-left: 20px;
+        z-index: -2;
+    }
+    
+    .tavla {
+        display: flex;
+        width: 70vw;
+        height: 25vh;
+        margin-left: 20px;
+        z-index: -2;
+    }
+
+    .boxName {
+        font-family: futura;
+        color: white;
+        margin-left: 20px;
+        margin-top: 7px;
+        font-size: 25px;
+    }
+    
+    .back {
+        height: 30px;
+        width: 18px;
+        margin-left: 10px;
+        margin-top: 9px;
+    }
+    
+    }
 }
