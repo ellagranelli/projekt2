@@ -12,13 +12,13 @@
         <div class="header">
             <p class="logofat">Påminn</p><p class="logothin">Mig</p>
 
-            <div class="notifications">
+            <button class="notifications">
                 <img class="bell" alt="bell" src="img/bell.png">
-            </div>   
+            </button>   
 
-            <div class="new">
+            <button class="new">
                 <img class="plus" alt="plus" src="img/plus.png">
-            </div>
+            </button>
 
             <div class="burger">
                 <div class="line1"></div>
@@ -37,19 +37,32 @@
         
             </nav>
 
+            <p class="instruktion">För att lägga till en ny tavla, tryck på "+".</p>
+
+            <div id="myModal" class="modalBox">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <label for="titel">Titel på din tavla:</label>
+                <input type="text" id="titel" name="title" placeholder="Titel"> <br>
+                <button id="enter">Klar!</button>
+            </div>
+            </div>
+
+            <div class="notificationsBox">
+
+            </div>
+
+
         
         
-    
+        <!--
         <p class="text">Mina Tavlor:</p>
         <div class="tavla grow">
             <p class="titel"><a href="tavla.html">Projekt</a></p>
-            <div class="prick"></div>
-            <div class="prick"></div>
-            <div class="prick"></div>
-        </div>
+        </div>-->
 
 
 </div>
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body> 
 </html>
