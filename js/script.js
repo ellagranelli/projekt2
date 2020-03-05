@@ -9,11 +9,12 @@ function toggleMeny() {
 
 document.querySelector('.burger').addEventListener('click', toggleMeny)
 
-const box = document.querySelector('.notificationsBox')
+const box = document.querySelector('.notificationBox')
 const button = document.querySelector('.notifications')
 
-function toggleMeny() {
-    document.querySelector('.notificationsBox').classList.toggle('navActive')
+function toggleBox() {
+      document.querySelector('.notificationBox').classList.toggle('navActive')
+      document.querySelector('.notifications').classList.toggle('toggle')
 }
 
 document.querySelector('.notifications').addEventListener('click', toggleMeny)
