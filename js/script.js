@@ -38,3 +38,32 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function AddReminder() {
+
+        let box = document.createElement('div');
+        box.innerHTML = `
+    <p>${newreminder.title}</p>
+    <p>${newreminder.time}</p>
+    <p>${newreminder.day}</p>
+    <p>${newreminder.month}</p>
+    <p>${newreminder.year}</p>
+        `;
+        document.querySelector('.instruktion').style.display = "none";
+        document.querySelector('.text').style.display = ""
+        document.querySelector('.påminnelse').appendChild(row);
+    }
+
+document.querySelector('#myModal').addEventListener('submit', function(e) {
+    let title = document.querySelector('#titel').value;
+    let time = document.querySelector('#deadline-hours').value;
+    let day = document.querySelector('#deadline-day').value;
+    let month = document.querySelector('#deadline-month').value;
+    let year = document.querySelector('#deadline-year').value;
+
+let newreminder = new reminder(title,time,day,month,year);
+
+newreminder.AddReminder(newreminder);
+
+e.preventDefault();
+});

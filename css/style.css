@@ -48,7 +48,7 @@
     padding: 20px;
     width: 50%; /* Could be more or less, depending on screen size */
     color: white;
-    height: 20%;
+    height: 42%;
   }
 
   .modal-content p {
@@ -69,6 +69,15 @@
     color: lightgray;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .half-width {
+      text-decoration: none;
+  }
+
+  select {
+      width: 20%;
+      height: 25px;
   }
 
 .notifications {
@@ -139,7 +148,16 @@
     margin-left: 40px;
 }
 
-.tavla {
+.myReminder {
+    display: none;
+    font-family: futura;
+    font-size: 30px;
+    color: Black;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.påminnelse {
     width: 300px;
     height: 150px;
     background-color:#DC6236;
@@ -170,7 +188,7 @@ a {
 }
 
 .burger {
-    margin-right: 12px;
+    margin-right: 14px;
     margin-top: 10px;
     cursor: pointer;
     position: absolute;
@@ -241,6 +259,7 @@ a {
     height: 42px;
     width: 28px;
     margin-left: 20px;
+    margin-right: 10px;
     margin-top: 8px;
 }
 
@@ -307,7 +326,7 @@ label {
 #skapa {
     width: 160px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 23px;
     font-family: futura;
     border: solid;
@@ -447,7 +466,7 @@ label {
         z-index: -2;
     }
     
-    .tavla {
+    .box {
         display: flex;
         width: 70vw;
         height: 25vh;
@@ -534,7 +553,7 @@ label {
     #skapa {
         width: 140px;
         height: 40px;
-        margin-top: 5px;
+        margin-top: 15px;
         font-size: 18px;
         font-family: futura;
         border: solid;
@@ -550,7 +569,7 @@ label {
         padding: 20px;
         width: 70%; /* Could be more or less, depending on screen size */
         color: white;
-        height: 30%;
+        height: 56%;
       }
       
       .close {
@@ -566,6 +585,11 @@ label {
         text-decoration: none;
         cursor: pointer;
       }
+  
+    select {
+        width: 50%;
+        height: 25px;
+    }
 
 }
 

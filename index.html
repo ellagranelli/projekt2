@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PåminnMig</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +24,7 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </div> 
         </div>
             
             <nav>
@@ -37,31 +37,86 @@
         
             </nav>
 
-            <p class="instruktion">För att lägga till en ny tavla, tryck på "+".</p>
+            <p class="instruktion">För att lägga till en ny påminnelse, tryck på "+".</p>
 
-            <div id="myModal" class="modalBox">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <label for="titel">Titel på din tavla:</label>
-                <input type="text" id="titel" name="title" placeholder="Titel"> <br>
-                <button id="skapa">Skapa tavla</button>
+        <div id="myModal" class="modalBox">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="task-form" action="index.html">
+                <label for="titel">Titel på din påminnelse:</label>
+                    <input type="text" id="titel" name="title" placeholder="Titel"> <br>
+                    <div class="half-width"><label for="deadline-hours">Tid (ex 10:00):</label><input type="time" min="00:00" max="23:59" id="deadline-hours" placeholder="10:00" required></div>
+                    <div class="third-width"><label for="deadline-day">Dag:</label>
+                          <select id="deadline-day" required>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select></div>
+                  
+                    <div class="third-width"><label for="deadline-month">Månad:</label>
+                         <select id="deadline-month" required>
+                           <option value="January">January</option>
+                           <option value="February">February</option>
+                           <option value="March">March</option>
+                           <option value="April">April</option>
+                           <option value="May">May</option>
+                           <option value="June">June</option>
+                           <option value="July">July</option>
+                           <option value="August">August</option>
+                           <option value="September">September</option>
+                           <option value="October">October</option>
+                           <option value="November">November</option>
+                           <option value="December">December</option>
+                         </select></div>
+                  
+                    <div class="third-width"><label for="deadline-year">År:</label>
+                         <select id="deadline-year" required>
+                           <option value="2020">2020</option>
+                           <option value="2021">2021</option>
+                           <option value="2022">2022</option>
+                         </select></div>
+                  
+                <button id="skapa">Skapa påminnelse</button>
             </div>
             </div>
 
             <div class="notificationBox">
                 <p>Hej</p>
             </div>
-
-
-        
-        
-        <!--
-        <p class="text">Mina Tavlor:</p>
-        <div class="tavla grow">
-            <p class="titel"><a href="tavla.html">Projekt</a></p>
-        </div>-->
-
-
+       <div>
+        <p class="myReminder">Mina Påminnelser:</p>
+            <div class="box grow">
+                <p class="påminnelseTitel"></p>
+            </div>
+        </div>
 </div>
     <script src="/js/script.js"></script>
 </body> 
