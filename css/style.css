@@ -48,12 +48,12 @@
     padding: 20px;
     width: 50%; /* Could be more or less, depending on screen size */
     color: white;
-    height: 42%;
+    height: 37%;
   }
 
   .modal-content p {
     font-family: futura;
-    font-size: 20px;
+    font-size: 10px;
   }
   
   .close {
@@ -75,9 +75,17 @@
       text-decoration: none;
   }
 
+  input[type=time] {
+      font-size: 20px;
+      width: 30%;
+      margin-left: 10px;
+      border-radius: 10px;
+      text-align: center;
+  }
+
   select {
       width: 20%;
-      height: 25px;
+      font-size: 20px;
   }
 
 .notifications {
@@ -94,18 +102,20 @@
 
 .notificationBox {
     display: flex;
+    justify-content: space-evenly;
+    text-align: center;
     flex-direction: column;
-    justify-content: space-around;
     position: absolute;
     right: 10px;
-    height: 200px;
+    height: 300px;
     top: -90vh;
     box-shadow: 9px 12px 0px 3px rgba(0, 0, 0, 0.2);
     background-color: #DC6236;
     align-items: center;
     width: 200px;
     transition: all 0.7s;
-
+    color: white;
+    font-family: futura;
 }
 
 .bell {
@@ -146,6 +156,7 @@
     color: Black;
     margin-top: 20px;
     margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 .myReminder {
@@ -157,15 +168,23 @@
     margin-left: 40px;
 }
 
-.påminnelse {
+.reminder {
+    display: none;
     width: 300px;
     height: 150px;
     background-color:#DC6236;
-    display: flex;
     margin-top: 10px;
     margin-left: 40px;
-    box-shadow: 9px 12px 0px 3px rgba(0, 0, 0, 0.2)  ;
+    box-shadow: 9px 12px 0px 3px rgba(0, 0, 0, 0.2);
 }
+
+.reminder p {
+    font-family: futura;
+    margin: 6px;
+    margin-top: 7px;
+    color: white;
+}
+
 
 a {
     color: white;
@@ -310,16 +329,16 @@ hr {
 input[type=text] {
     width: 90%;
     padding: 12px 20px;
-    margin: 10px 0;
+    margin: 10px 10px 10px 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
 }
 
 label {
     font-family: futura;
     color: maroon;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -334,6 +353,27 @@ label {
     color: black;
     border-color: white;
     background-color: white;
+}
+
+.help h2 {
+    text-align: center;
+    margin: 20px;
+    font-family: futura;
+    font-weight: lighter;
+}
+
+#kontakt {
+    font-family: futura;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+#instruktion {
+    font-family: futura;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 /*NEJEEJEJEJEJEJEJEJEJEJEJEJJEJEJ*/
@@ -569,7 +609,7 @@ label {
         padding: 20px;
         width: 70%; /* Could be more or less, depending on screen size */
         color: white;
-        height: 56%;
+        height: 60%;
       }
       
       .close {
@@ -591,6 +631,34 @@ label {
         height: 25px;
     }
 
+  input[type=time] {
+    font-size: 16px;
+    width: 30%;
+    margin-left: 4px;
+    border-radius: 10px;
+}
+
+    #kontakt {
+        font-family: futura;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #instruktion {
+        font-family: futura;
+        font-size: 18px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .reminder p {
+        font-family: futura;
+        font-size: 14px;
+        margin: 10px;
+        margin-top: 7px;
+        color: white;
+    }
+    
 }
 
 
