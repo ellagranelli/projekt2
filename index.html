@@ -43,7 +43,7 @@
             <span class="close">&times;</span>
             <form id="task-form" action="index.html">
                 <label for="titel">Titel på din påminnelse:</label>
-                    <input type="text" id="titel" name="title" placeholder="Titel"> <br>
+                    <input type="text" id="title" name="title" placeholder="Titel"> <br>
                     <div class="half-width"><label for="deadline-hours">Tid (ex 10:00):</label><input type="time" min="00:00" max="23:59" id="deadline-hours" placeholder="10:00" required></div>
                     <div class="third-width"><label for="deadline-day">Dag:</label>
                           <select id="deadline-day" required>
@@ -113,8 +113,9 @@
        <div>
         <p class="myReminder">Mina Påminnelser:</p>
             <div class="reminder grow">
-                <p class="påminnelseTitel"></p>
-            </div>
+                <ul id="task-list">
+             </div>
+            </ul>
         </div>
 </div>
     <script src="/js/script.js"></script>
