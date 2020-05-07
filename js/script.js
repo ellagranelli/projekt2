@@ -49,7 +49,7 @@ function AddReminder(title,time,day,month,year) {
   <h2>${title}</h2> 
   <p>${time}, ${day} ${month}, ${year}</p>
       `;
-      console.log(box);
+      console.log(box); 
       document.querySelector('.instruktion').style.display = "none";
       document.querySelector('.myReminder').style.display = "flex";
       document.querySelector('.reminder').style.display = "flex"; 
